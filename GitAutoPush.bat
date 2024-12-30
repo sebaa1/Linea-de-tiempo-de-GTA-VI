@@ -1,6 +1,6 @@
 @echo off
 REM Cambia el directorio al repositorio de tu proyecto
-cd /d C:\ruta\a\tu\proyecto
+cd /d C:\Users\seba\Desktop\Programación\timeline gta vi
 
 REM Agrega todos los archivos al índice
 git add .
