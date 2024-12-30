@@ -43,9 +43,9 @@ h1 {
 
 .block {
     margin-top: 20px;
-    width: 45%;
-    margin-right: -80%;
-    margin-left: 30%;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
     background-color: rgba(55, 28, 51, 0.8);
     padding: 1.5rem;
     border-radius: 9px;
