@@ -1,31 +1,16 @@
-:loop
-	
-	:: Navigate to the directory you wish to push to GitHub
-	::Change <path> as needed. Eg. C:\Users\rich\Desktop\Writings
-	cd C:\Users\seba\Desktop\Programación\timeline gta vi
-	
-	::Initialize GitHub
-	git init
-	
-	::Pull any external changes (maybe you deleted a file from your repo?)
-	git pull
-	
-	::Add all files in the directory
-	git add --all
-	
-	::Commit all changes with the message "auto push". 
-	::Change as needed.
-	git commit -m "auto push"
-	
-	::Push all changes to GitHub 
-	git push
-	
-	::Alert user to script completion and relaunch.
-	echo Complete. Relaunching...
-	
-	::Wait 300 seconds until going to the start of the loop.
-	::Change as needed.
-	TIMEOUT 300
-	
-::Restart from the top.	
-goto loop
+@echo off
+REM Cambia el directorio al repositorio de tu proyecto
+cd /d C:\ruta\a\tu\proyecto
+
+REM Agrega todos los archivos al índice
+git add .
+
+REM Realiza el commit con un mensaje dinámico
+git commit -m "Auto-commit: %date% %time%"
+
+REM Empuja los cambios al repositorio remoto
+git push origin main
+
+REM Mensaje de confirmación
+echo Cambios subidos a GitHub exitosamente.
+pause
