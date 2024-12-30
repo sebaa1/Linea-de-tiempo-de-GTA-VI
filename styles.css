@@ -33,7 +33,8 @@ body::before {
 h1 {
         text-align: center;
         color: #47133a;
-        padding-bottom: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         font-style: italic;
         font-size: 240%;
         text-shadow: -1px -1px 0 #8f0571; 
